@@ -3,51 +3,111 @@
     <title>Inscription Page</title>
 </head>
 <body>
-    <h1>Creat an Account</h1>
-    <table border="1"width="100%"height="100%">
+    <h1>Create an Account</h1>
+    <table border="1" width="100%">
         <tr>
-            <td>A1</td>
-            <td>B1</td>
+            <td>First Name:</td>
+            <td><input type="text" id="first_name" name="first_name"></td>
         </tr>
         <tr>
-            <td>A2</td>
-            <td>B2</td>
+            <td>Last Name:</td>
+            <td><input type="text" id="last_name" name="last_name"></td>
         </tr>
         <tr>
-            <td>A3</td>
-            <td>B3</td>
+            <td>Age:</td>
+            <td><input type="number" id="age" name="age"></td>
         </tr>
         <tr>
-            <td>A4</td>
-            <td>B4</td>
+            <td>Wilaya:</td>
+            <td>
+                <select id="wilaya" name="wilaya">
+                    <option value="">Select Wilaya</option>
+                    <option value="Adrar">Adrar</option>
+                    <option value="Chlef">Chlef</option>
+                    <option value="Laghouat">Laghouat</option>
+                    <option value="Oum El Bouaghi">Oum El Bouaghi</option>
+                    <option value="Batna">Batna</option>
+                    <option value="Béjaïa">Béjaïa</option>
+                    <option value="Biskra">Biskra</option>
+                    <option value="Béchar">Béchar</option>
+                    <option value="Blida">Blida</option>
+                    <option value="Bouïra">Bouïra</option>
+                    <option value="Tamanrasset">Tamanrasset</option>
+                    <option value="Tébessa">Tébessa</option>
+                    <option value="Tlemcen">Tlemcen</option>
+                    <option value="Tiaret">Tiaret</option>
+                    <option value="Tizi Ouzou">Tizi Ouzou</option>
+                    <option value="Algiers">Algiers</option>
+                    <option value="Djelfa">Djelfa</option>
+                    <option value="Jijel">Jijel</option>
+                    <option value="Sétif">Sétif</option>
+                    <option value="Saïda">Saïda</option>
+                    <option value="Skikda">Skikda</option>
+                    <option value="Sidi Bel Abbès">Sidi Bel Abbès</option>
+                    <option value="Annaba">Annaba</option>
+                    <option value="Guelma">Guelma</option>
+                    <option value="Constantine">Constantine</option>
+                    <option value="Médéa">Médéa</option>
+                    <option value="Mostaganem">Mostaganem</option>
+                    <option value="M'Sila">M'Sila</option>
+                    <option value="Mascara">Mascara</option>
+                    <option value="Ouargla">Ouargla</option>
+                    <option value="Oran">Oran</option>
+                    <option value="El Bayadh">El Bayadh</option>
+                    <option value="Illizi">Illizi</option>
+                    <option value="Bordj Bou Arréridj">Bordj Bou Arréridj</option>
+                    <option value="Boumerdès">Boumerdès</option>
+                    <option value="El Taref">El Taref</option>
+                    <option value="Tindouf">Tindouf</option>
+                    <option value="Tissemsilt">Tissemsilt</option>
+                    <option value="El Oued">El Oued</option>
+                    <option value="Khenchela">Khenchela</option>
+                    <option value="Souk Ahras">Souk Ahras</option>
+                    <option value="Tipaza">Tipaza</option>
+                    <option value="Mila">Mila</option>
+                    <option value="Aïn Defla">Aïn Defla</option>
+                    <option value="Naâma">Naâma</option>
+                    <option value="Aïn Témouchent">Aïn Témouchent</option>
+                    <option value="Ghardaïa">Ghardaïa</option>
+                    <option value="Relizane">Relizane</option>
+                </select>
+            </td>
         </tr>
         <tr>
-            <td>A5</td>
-            <td>B5</td>
+            <td>Phone Number:</td>
+            <td><input type="tel" id="phone_number" name="phone_number"></td>
         </tr>
         <tr>
-            <td>A6</td>
-            <td>B6</td>
+            <td>Email:</td>
+            <td><input type="email" id="email" name="email"></td>
         </tr>
         <tr>
-            <td>A7</td>
-            <td>B7</td>
+            <td>Address:</td>
+            <td><input type="text" id="address" name="address"></td>
         </tr>
         <tr>
-            <td>A8</td>
-            <td>B8</td>
+            <td>Password:</td>
+            <td><input type="password" id="password" name="password"></td>
         </tr>
         <tr>
-            <td>A9</td>
-            <td>B9</td>
+            <td>Confirm Password:</td>
+            <td><input type="password" id="confirm_password" name="confirm_password"></td>
         </tr>
         <tr>
-            <td>A10</td>
-            <td>B10</td>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </td>
         </tr>
         <tr>
-            <td>A11</td>
-            <td>B11</td>
+            <td></td>
+            <td>
+                <button type="reset" >Cancel</button>
+                <button type="submit">Submit</button>
+            </td>
         </tr>
     </table>
 </body>
