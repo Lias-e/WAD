@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>Order Product</title>
+</head>
+<body>
+    <h1>Order Product</h1>
+    <table border="1" width="100%">
+        <tr>
+            <td rowspan="6"><img src="..." width="300" height="300"></td>
+            <td>Product Seller's Name:</td>
+            <td><input type="text" id="seller_name" name="seller_name" value="Seller's Name" disabled></td>
+        </tr>
+        <tr>
+            <td>Product Price:</td>
+            <td><input type="number" id="product_price" name="product_price" value="0.00" disabled></td>
+        </tr>
+        <tr>
+            <td>Product Reference:</td>
+            <td><input type="text" id="product_reference" name="product_reference" value="Reference" disabled></td>
+        </tr>
+        <tr>
+            <td>Product Color:</td>
+            <td>
+                <input type="checkbox" id="color_red" name="color" value="Red">
+                <label for="color_red">Red</label>
+                <input type="checkbox" id="color_blue" name="color" value="Blue">
+                <label for="color_blue">Blue</label>
+                <input type="checkbox" id="color_green" name="color" value="Green">
+                <label for="color_green">Green</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Quantity:</td>
+            
+            <td>
+                <select id="quantity" name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="submit">Submit</button></td>
+        </tr>
+    </table>
+</body>
+</html>
