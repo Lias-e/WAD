@@ -1,12 +1,11 @@
 body {
-    background-image: url("images/bg-5.jpg");
-    background-size: cover;
+    background-image: url("images/bg-r.png");
+    background-size: 300px;
     background-position: center;
-    background-repeat: no-repeat;
-    color: #5e503f; 
+    background-repeat: repeat;
     padding: 2rem;
-    font-family: 'Cairo', sans-serif;
-}
+    text-align: center;
+    font-family: 'Cairo', sans-serif;}
 
 body::before {
     content: "";
@@ -25,25 +24,80 @@ body::before {
     z-index: 1;
 }
   
-table {
+.showroom {
     border-collapse: separate;
-    border-spacing: 20px;
     width: 100%;
 }
 
-td {
-    background: #f4d58d; 
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(94, 80, 63, 0.15); 
-    text-align: center;
-    vertical-align: top;
-    transition: transform 0.2s ease;
+.catg{
+    background: #fffaf3;
+    border-radius: 5px;
 }
 
-td:hover {
+.cards {
+    text-align: center;
+}
+
+
+/*.cards:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 20px rgba(94, 80, 63, 0.25);
+}*/
+
+.imgs{
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    padding: 10px;
+    transition: transform 0.3s ease;
 }
-  
-  
+
+.imgs:hover{
+    /*
+    height: 155px;
+    width: 155px;
+    */
+    transform: scale(110%);
+}
+
+.price {
+    color: #3f612d;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    background-color: #f4d58d;
+    color: #5e503f;
+    border-radius: 5px;
+  }
+
+.top-bar {
+    background-color: #f7f6f6; 
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h1 {
+    text-align: center;
+    color: #f4d58d;
+}
+
+.head{
+    font-style: italic;
+    color: #8f8557;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.button {
+    background: #f4d58d; 
+    padding: 5px;
+    border-radius: 15px;
+    border-style: outset;
+    border-width: 2px;
+    text-decoration: none;
+}
+
