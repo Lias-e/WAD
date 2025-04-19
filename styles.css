@@ -1,11 +1,12 @@
 body {
-    background-image: url("images/bg-r.png");
-    background-size: 300px;
-    background-position: center;
-    background-repeat: repeat;
-    padding: 2rem;
+
+    background-image: url('images/bg.png');
+    background-size: cover;         /* makes it fill the area */
+    background-position: center;    /* centers the image */
+    background-repeat: no-repeat;   /* prevents tiling */
     text-align: center;
-    font-family: 'Cairo', sans-serif;}
+    font-family: 'Cairo', sans-serif;
+}
 
 body::before {
     content: "";
@@ -23,26 +24,33 @@ body::before {
     position: relative;
     z-index: 1;
 }
-  
+table{
+    direction: rtl;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-bar {
+    background-color: #ffffff; 
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
 .showroom {
     border-collapse: separate;
     width: 100%;
 }
 
 .catg{
-    background: #fffaf3;
+    background: #f4d58d;
     border-radius: 5px;
+    color: #000000;
 }
 
 .cards {
     text-align: center;
 }
-
-
-/*.cards:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(94, 80, 63, 0.25);
-}*/
 
 .imgs{
     height: 150px;
@@ -60,21 +68,13 @@ body::before {
     transform: scale(110%);
 }
 
-.price {
+.price_name {
     color: #3f612d;
     font-weight: bold;
     font-size: 1.1rem;
-    text-align: center;
-    background-color: #f4d58d;
+    background-color: #ffffff;
     color: #5e503f;
     border-radius: 5px;
-  }
-
-.top-bar {
-    background-color: #f7f6f6; 
-    border-radius: 5px;
-    text-align: center;
-    vertical-align: middle;
 }
 
 h1 {
@@ -95,9 +95,29 @@ h2 {
 .button {
     background: #f4d58d; 
     padding: 5px;
-    border-radius: 15px;
+    border-radius: 5px;
     border-style: outset;
     border-width: 2px;
     text-decoration: none;
 }
 
+.button:active{
+    transform: scale(90%);
+}
+
+/*order pages styling : */
+
+.showcase{
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+}
+
+.order_tabel{
+    background-color: #f4d58d; 
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
